@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact - My Tech Portfolio" />
+    <title>Contact | My Tech Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="4" y="4" width="16" height="16" rx="3" />
+              <path d="M8 9h8M8 13h5M8 17h8" /></svg></span
+          ><span>MY TECH PORTFOLIO</span></a
+        >
+        <nav class="nav-links">
+          <a class="" href="index.html">Home</a
+          ><a class="" href="about.html">About</a
+          ><a class="" href="projects.html">Projects</a
+          ><a class="" href="skills.html">Skills</a
+          ><a class="active" href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <label class="theme-control"
+            ><input type="checkbox" id="dark-mode" /> Dark mode</label
+          ><a class="lang-switch" href="fr/index.html">FR ↗</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container page-hero">
+        <div class="kicker">Let's connect</div>
+        <h1>Contact</h1>
+        <p>
+          Have a question or an idea? Fill in the form below to send me a
+          message by email.
+        </p>
+      </div>
+      <section class="section" style="padding-top: 10px">
+        <div class="container grid grid-2">
+          <div class="card">
+            <h2>Send me a message</h2>
+            <p>
+              Complete the fields below. Your email application will open with
+              the message ready to send.
+            </p>       
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/mnpplaqa"
+              method="POST"
+              
+            >
+              <label for="sender-name">Your name</label>
+              <input
+                id="sender-name"
+                type="text"
+                name="Name"
+                placeholder="Enter your name"
+                required
+              />
+
+              <label for="sender-email">Your email</label>
+              <input
+                id="sender-email"
+                type="email"
+                name="Email"
+                placeholder="Enter your email address"
+                required
+              />
+
+              <label for="message-subject">Subject</label>
+              <input
+                id="message-subject"
+                type="text"
+                name="Subject"
+                placeholder="Message subject"
+                required
+              />
+
+              <label for="message-body">Message</label>
+              <textarea
+                id="message-body"
+                name="Message"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+
+              <button class="btn btn-primary" type="submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        
+          <div class="callout">
+            <div class="kicker">Portfolio note</div>
+            <h2>Keep building.</h2>
+            <p>
+              Every project does not need to be perfect to be worth documenting.
+              Include the objective, your approach, the tools you used, the
+              result and what you would improve next time.
+            </p>
+            <div class="feature-list" style="margin-top: 20px">
+              <h2> More Contact</h2>        
+              <div class="contact-card">
+                <div class="contact-dot">⌘</div>
+                <div>
+                  <b>GitHub</b>
+                  <div class="small-note">github.com/your-username</div>
+                </div>
+              </div>
+              <div class="contact-card">
+                <div class="contact-dot">in</div>
+                <div>
+                  <b>LinkedIn</b>
+                  <div class="small-note">linkedin.com/in/your-profile</div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 MY TECH PORTFOLIO</span
+        ><span
+          >Personal engineering portfolio · Made to grow with your
+          projects</span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
