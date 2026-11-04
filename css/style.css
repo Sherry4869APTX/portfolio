@@ -4,7 +4,7 @@
   --surface: #ffffff;
   --text: #263247;
   --muted: #68758b;
-  --blue: #829bc8;
+  --blue: #7e9dd7;
   --blue-dark: #526d9d;
   --soft-blue: #eaf0fa;
   --border: #dfe6f0;
@@ -421,7 +421,6 @@ a {
   }
 }
 
-
 /* Contact form */
 .contact-form {
   display: flex;
@@ -458,4 +457,70 @@ a {
   align-self: flex-start;
   margin-top: 8px;
   cursor: pointer;
+}
+
+.arduino-notice{
+  margin-bottom: 35px;
+  border-left: 4px solid var(--blue-dark);
+}
+.arduino-notice .h2{
+margin-bottom: 10px;
+}
+.project-details{
+  margin-bottom: 20px;
+}
+.project-details .h2{
+  margin-bottom: 20px;
+}
+.project-details .h3{
+  margin: 18px 0 10px;
+}
+.project-details .ul{
+  padding-left: 22px;
+  line-height: 2;
+}
+.project-files-grid{
+  display: grid;
+  grid-template-columns: repeat(2,fr);
+  gap: 20px;
+}
+  .file-card {
+padding: 25px;
+  }
+  .file-icon{
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--soft-blue);
+    color: var(--blue-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .file-card .p {
+    margin: 12px 0 20px;
+  }
+  .project-gallery{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .project-gallery .img{
+ width: 100%;
+ min-height: 180% ;
+ object-fit: contain;
+ border-radius: 12px;
+ background: var(--soft-blue)
+  }
+.back-section{
+  margin: 40px 0;
+}
+@media (max-with:600px) {
+  .project-files-grid,
+  .project-gallery{
+    grid-template-columns: 1fr;
+  }
 }
